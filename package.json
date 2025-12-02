@@ -1,0 +1,27 @@
+{
+  "name": "workshop-slides-template",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "slidev",
+    "dev": "slidev --open",
+    "build": "./scripts/build-all.sh",
+    "dev:01": "slidev lessons/01-example-lesson/01-example-lesson.md --open",
+    "build:01": "slidev build lessons/01-example-lesson/01-example-lesson.md --out dist/01-example-lesson",
+    "export": "slidev export",
+    "preview": "npx vite preview --outDir dist"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.1.0",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "vue": "^3.5.18"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.55.1",
+    "prettier": "^3.6.2",
+    "prettier-plugin-slidev": "^1.0.5"
+  }
+}
+
+
