@@ -8,6 +8,8 @@
     "build": "./scripts/build-all.sh",
     "dev:01": "slidev lessons/01-example-lesson/01-example-lesson.md --open",
     "build:01": "slidev build lessons/01-example-lesson/01-example-lesson.md --out dist/01-example-lesson",
+    "dev:02": "slidev lessons/02-advanced-concepts/02-advanced-concepts.md --open",
+    "build:02": "slidev build lessons/02-advanced-concepts/02-advanced-concepts.md --out dist/02-advanced-concepts",
     "export": "slidev export",
     "preview": "npx vite preview --outDir dist"
   },

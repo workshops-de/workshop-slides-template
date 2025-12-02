@@ -34,13 +34,12 @@ Slide Deck Collection
   <p class="text-sm opacity-70">This is an example lesson to demonstrate the structure</p>
 </a>
 
-<!-- Add more lessons here as you create them -->
-<!--
-<a href="../02-another-lesson/" class="p-4 rounded-lg bg-white bg-opacity-10 hover:bg-opacity-20 transition-all no-underline">
-  <h3 class="text-xl font-bold">02 - Another Lesson</h3>
-  <p class="text-sm opacity-70">Description of the lesson</p>
+<a href="../02-advanced-concepts/" class="p-4 rounded-lg bg-white bg-opacity-10 hover:bg-opacity-20 transition-all no-underline">
+  <h3 class="text-xl font-bold">02 - Advanced Concepts</h3>
+  <p class="text-sm opacity-70">Design patterns and advanced programming techniques</p>
 </a>
--->
+
+<!-- Add more lessons here as you create them -->
 
 </div>
 

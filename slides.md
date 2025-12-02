@@ -1,10 +1,10 @@
 ---
 theme: seriph
 background: https://cover.sli.dev
-title: Example Lesson
+title: Slides of all lessons
 info: |
-  ## Example Lesson
-  This is an example lesson to demonstrate the slide structure.
+  ## Example
+  This is an example how to have all slides in one slidedeck for presenter view.
 class: text-center
 drawings:
   persist: false
@@ -20,4 +20,8 @@ src: ./00-index.md
 
 ---
 src: ./lessons/01-example-lesson/01-example-lesson.md
+---
+
+---
+src: ./lessons/02-advanced-concepts/02-advanced-concepts.md
 ---
