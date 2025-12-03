@@ -1,9 +1,6 @@
 ---
-layout: cover
-background: https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1920
+layout: why
 ---
-
-# Why Example Topic?
 
 Understanding the motivation behind this concept
 
@@ -29,40 +26,14 @@ Without this concept, developers face:
 
 # Real-World Example
 
-<div class="grid grid-cols-2 gap-8">
 
-<div>
-
-## Before
-
+````md magic-move
 ```typescript
-// Old approach with problems
 function oldWay() {
-  // Complex, hard to maintain
   return result;
 }
 ```
-
-</div>
-
-<div>
-
-## After
-
 ```typescript
-// New approach - cleaner
-function newWay() {
-  // Simple, maintainable
-  return result;
-}
+const newWay = () => result;
 ```
-
-</div>
-
-</div>
-
-<div class="mt-8 p-4 bg-blue-500 bg-opacity-20 rounded-lg">
-  <strong>💡 Key Insight:</strong> This approach reduces complexity and improves maintainability.
-</div>
-
-
+````

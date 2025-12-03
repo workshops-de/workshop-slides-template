@@ -1,5 +1,4 @@
 ---
-theme: seriph
 background: https://cover.sli.dev
 title: Example Lesson
 info: |
@@ -15,6 +14,10 @@ seoMeta:
 # Build configuration
 base: /01-example-lesson/
 out: ../../dist/01-example-lesson
+theme: "@workshops.de/slidev-theme"
+addons:
+  - window-mockup
+  - slidev-addon-tldraw
 ---
 
 # Example Lesson
@@ -34,23 +37,7 @@ Welcome to this example lesson
 <Toc maxDepth="1"></Toc>
 
 ---
-src: ./slides/example-topic/why.md
----
-
----
-src: ./slides/example-topic/what.md
----
-
----
-src: ./slides/example-topic/how.md
----
-
----
-src: ./slides/example-topic/what-if.md
----
-
----
-src: ./slides/example-topic/task.md
+src: ./slides/example-topic/0-index.md
 ---
 
 ---

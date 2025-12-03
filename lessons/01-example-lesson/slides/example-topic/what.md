@@ -1,9 +1,6 @@
 ---
-layout: cover
-background: https://images.unsplash.com/photo-1456428746267-a1756408f782?w=1920
+layout: little-what
 ---
-
-# What is Example Topic?
 
 Core concepts and theory
 
@@ -78,5 +75,3 @@ console.log(result);
 <div class="p-4 bg-yellow-500 bg-opacity-20 rounded-lg">
   <strong>⚠️ Note:</strong> Understanding these terms is crucial for the exercises.
 </div>
-
-

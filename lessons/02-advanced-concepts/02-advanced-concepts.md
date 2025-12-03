@@ -1,5 +1,4 @@
 ---
-theme: seriph
 background: https://cover.sli.dev
 title: Advanced Concepts
 info: |
@@ -15,6 +14,10 @@ seoMeta:
 # Build configuration
 base: /02-advanced-concepts/
 out: ../../dist/02-advanced-concepts
+theme: "@workshops.de/slidev-theme"
+addons:
+  - window-mockup
+  - slidev-addon-tldraw
 ---
 
 # Advanced Concepts
@@ -66,4 +69,3 @@ Questions?
     <carbon:logo-github />
   </a>
 </div>
-

@@ -1,5 +1,4 @@
 ---
-theme: seriph
 background: https://cover.sli.dev
 title: Slides of all lessons
 info: |
@@ -12,6 +11,10 @@ transition: slide-left
 mdc: true
 seoMeta:
   ogImage: auto
+theme: "@workshops.de/slidev-theme"
+addons:
+  - window-mockup
+  - slidev-addon-tldraw
 ---
 
 ---

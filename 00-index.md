@@ -1,5 +1,4 @@
 ---
-theme: seriph
 background: https://cover.sli.dev
 title: Workshop Name - Slide Decks
 info: |
@@ -48,5 +47,3 @@ Slide Deck Collection
     <carbon:logo-github />
   </a>
 </div>
-
-
