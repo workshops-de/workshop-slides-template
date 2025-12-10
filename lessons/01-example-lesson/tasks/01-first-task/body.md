@@ -33,6 +33,54 @@ npm run dev
 
 Open your browser and navigate to `http://localhost:3000`. You should see the welcome page.
 
+## Code Examples
+
+Here are some examples showing Shiki syntax highlighting features:
+
+### TypeScript with Line Highlighting
+
+```typescript
+interface User {
+  id: number;        // [!code highlight]
+  name: string;
+  email: string;
+  isActive: boolean; // [!code highlight]
+  createdAt: Date;   // [!code highlight]
+  updatedAt: Date;   // [!code highlight]
+}
+```
+
+### Diff Highlighting
+
+```typescript
+function greet(name: string) {
+  console.log('Hello') // [!code --]
+  console.log(`Hello, ${name}!`) // [!code ++]
+}
+```
+
+### Focus with Blur
+
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root', // [!code focus]
+  template: '<h1>Hello World</h1>'
+})
+export class AppComponent {}
+```
+
+### Error & Warning Annotations
+
+```typescript
+const config = {
+  apiUrl: process.env.API_URL, // [!code warning]
+  secret: 'hardcoded-secret',  // [!code error]
+  timeout: 5000,
+};
+```
+
 ## Success Criteria
 
 - [ ] Repository cloned successfully

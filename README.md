@@ -46,9 +46,15 @@ Open http://localhost:3030 to see your slides.
 │       │       └── task.md          # Exercise slide
 │       └── tasks/                   # Task definitions (synced to platform)
 │           ├── 01-first-task/
-│           │   └── task.yml
+│           │   ├── task.yml         # Task metadata
+│           │   ├── body.md          # Main description
+│           │   ├── hint.md          # Hints (optional)
+│           │   └── trainer_hint.md  # Trainer notes (optional)
 │           └── 02-second-task/
 │               ├── task.yml
+│               ├── body.md
+│               ├── hint.md
+│               ├── bonus.md         # Bonus challenges (optional)
 │               └── assets/          # Task-specific images
 └── .cursor/
     └── rules/
@@ -94,7 +100,38 @@ Create the 4-MAT structure:
 
 ### 5. Add Tasks
 
-Create `tasks/01-task-name/task.yml` for each exercise.
+Create a task folder with `task.yml` for metadata and separate `.md` files for content:
+
+```
+tasks/01-task-name/
+├── task.yml           # Metadata (title, position, category, etc.)
+├── body.md            # Main task description
+├── hint.md            # Hints for participants (optional)
+├── bonus.md           # Bonus challenges (optional)
+├── trainer_hint.md    # Notes for trainers (optional)
+└── assets/            # Task-specific images (optional)
+```
+
+**task.yml** - Only metadata:
+```yaml
+title: "Task Title"
+position: 1
+category: "Basics"
+preparation: false
+estimated_time_in_minutes: 15
+always_unlocked: false
+git_tag_completed: solution-01-task-name
+```
+
+**body.md** - Main task description with full Markdown support.
+
+**hint.md** - Collapsible hints using `<details>` tags.
+
+**bonus.md** - Additional challenges for fast learners.
+
+**trainer_hint.md** - Notes visible only to trainers (common issues, time estimates, discussion points).
+
+> **Note**: You can also include markdown content directly in `task.yml` using `body_markdown`, `hint_markdown`, etc., but separate files are recommended for better readability and editor support.
 
 ### 6. Update Build Script
 
