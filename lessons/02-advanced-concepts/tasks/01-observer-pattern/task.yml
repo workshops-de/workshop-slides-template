@@ -1,7 +1,7 @@
 # Task Configuration
-title: "Observer Pattern Implementation"
+title: 'Observer Pattern Implementation'
 position: 1
-category: "Design Patterns"
+category: 'Design Patterns'
 preparation: false
 estimated_time_in_minutes: 20
 always_unlocked: true
@@ -103,4 +103,3 @@ body_markdown: |
 
 # Git Integration
 git_tag_completed: solution-observer-pattern
-

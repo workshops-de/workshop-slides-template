@@ -1,7 +1,7 @@
 # Task Configuration
-title: "Second Task - Implementation"
+title: 'Second Task - Implementation'
 position: 2
-category: "Implementation"
+category: 'Implementation'
 preparation: false
 estimated_time_in_minutes: 20
 always_unlocked: false

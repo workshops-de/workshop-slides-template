@@ -17,4 +17,3 @@
 - Why do we use npm/pnpm/yarn?
 - What is the purpose of package-lock.json?
 - How does the dev server hot-reload work?
-

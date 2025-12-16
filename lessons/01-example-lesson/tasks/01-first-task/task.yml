@@ -1,7 +1,7 @@
 # Task Configuration
-title: "First Task - Getting Started"
+title: 'First Task - Getting Started'
 position: 1
-category: "Basics"
+category: 'Basics'
 preparation: true
 estimated_time_in_minutes: 10
 always_unlocked: true
@@ -14,4 +14,3 @@ git_tag_completed: solution-01-first-task
 # - hint.md           -> Hints for solving the task
 # - bonus.md          -> Bonus challenges
 # - trainer_hint.md   -> Notes for trainers (not shown to participants)
-

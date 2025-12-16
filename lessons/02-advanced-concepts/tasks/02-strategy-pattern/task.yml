@@ -1,7 +1,7 @@
 # Task Configuration
-title: "Strategy Pattern Implementation"
+title: 'Strategy Pattern Implementation'
 position: 2
-category: "Design Patterns"
+category: 'Design Patterns'
 preparation: false
 estimated_time_in_minutes: 15
 always_unlocked: false
@@ -101,4 +101,3 @@ body_markdown: |
 
 # Git Integration
 git_tag_completed: solution-strategy-pattern
-

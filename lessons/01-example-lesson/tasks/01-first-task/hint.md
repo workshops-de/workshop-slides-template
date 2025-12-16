@@ -15,8 +15,8 @@ nvm use
 <summary>💡 Hint 2: Port Already in Use</summary>
 
 If port 3000 is already in use, you can either:
+
 - Stop the other process using that port
 - Change the port in your environment variables
 
 </details>
-

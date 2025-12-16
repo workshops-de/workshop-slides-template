@@ -92,6 +92,7 @@ Create `lessons/02-new-lesson/02-new-lesson.md` with the Slidev frontmatter.
 ### 4. Add Topic Slides
 
 Create the 4-MAT structure:
+
 - `slides/topic-name/why.md`
 - `slides/topic-name/what.md`
 - `slides/topic-name/how.md`
@@ -113,10 +114,11 @@ tasks/01-task-name/
 ```
 
 **task.yml** - Only metadata:
+
 ```yaml
-title: "Task Title"
+title: 'Task Title'
 position: 1
-category: "Basics"
+category: 'Basics'
 preparation: false
 estimated_time_in_minutes: 15
 always_unlocked: false
@@ -159,23 +161,23 @@ Add dev/build scripts:
 
 Each topic follows the 4-MAT learning cycle:
 
-| Phase | Purpose | Content |
-|-------|---------|---------|
-| **WHY** | Connection | Why this matters, real-world problems |
-| **WHAT** | Conceptual | Core concepts, theory, definitions |
-| **HOW** | Practice | Step-by-step implementation |
-| **WHAT IF** | Creative | Edge cases, alternatives, extensions |
+| Phase       | Purpose    | Content                               |
+| ----------- | ---------- | ------------------------------------- |
+| **WHY**     | Connection | Why this matters, real-world problems |
+| **WHAT**    | Conceptual | Core concepts, theory, definitions    |
+| **HOW**     | Practice   | Step-by-step implementation           |
+| **WHAT IF** | Creative   | Edge cases, alternatives, extensions  |
 
 ## 📦 Available Scripts
 
-| Script | Description |
-|--------|-------------|
-| `npm run dev` | Start development server |
-| `npm run dev:01` | Start dev server for lesson 01 |
-| `npm run build` | Build all lessons |
-| `npm run build:01` | Build lesson 01 only |
-| `npm run export` | Export slides to PDF |
-| `npm run preview` | Preview built slides |
+| Script             | Description                    |
+| ------------------ | ------------------------------ |
+| `npm run dev`      | Start development server       |
+| `npm run dev:01`   | Start dev server for lesson 01 |
+| `npm run build`    | Build all lessons              |
+| `npm run build:01` | Build lesson 01 only           |
+| `npm run export`   | Export slides to PDF           |
+| `npm run preview`  | Preview built slides           |
 
 ## 🔗 Platform Integration
 
@@ -199,7 +201,7 @@ Change the theme in your slide frontmatter:
 
 ```yaml
 ---
-theme: seriph  # or: default, apple-basic, etc.
+theme: seriph # or: default, apple-basic, etc.
 ---
 ```
 
@@ -217,5 +219,3 @@ Use [UnoCSS](https://unocss.dev/) classes directly in your slides.
 ## 📄 License
 
 MIT
-
-

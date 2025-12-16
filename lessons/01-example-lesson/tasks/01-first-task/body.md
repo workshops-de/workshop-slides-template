@@ -41,12 +41,12 @@ Here are some examples showing Shiki syntax highlighting features:
 
 ```typescript
 interface User {
-  id: number;        // [!code highlight]
+  id: number; // [!code highlight]
   name: string;
   email: string;
   isActive: boolean; // [!code highlight]
-  createdAt: Date;   // [!code highlight]
-  updatedAt: Date;   // [!code highlight]
+  createdAt: Date; // [!code highlight]
+  updatedAt: Date; // [!code highlight]
 }
 ```
 
@@ -54,8 +54,8 @@ interface User {
 
 ```typescript
 function greet(name: string) {
-  console.log('Hello') // [!code --]
-  console.log(`Hello, ${name}!`) // [!code ++]
+  console.log('Hello'); // [!code --]
+  console.log(`Hello, ${name}!`); // [!code ++]
 }
 ```
 
@@ -66,7 +66,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root', // [!code focus]
-  template: '<h1>Hello World</h1>'
+  template: '<h1>Hello World</h1>',
 })
 export class AppComponent {}
 ```
@@ -76,7 +76,7 @@ export class AppComponent {}
 ```typescript
 const config = {
   apiUrl: process.env.API_URL, // [!code warning]
-  secret: 'hardcoded-secret',  // [!code error]
+  secret: 'hardcoded-secret', // [!code error]
   timeout: 5000,
 };
 ```
@@ -95,4 +95,3 @@ If you encounter issues:
 - Make sure you're using the correct Node.js version (check `.nvmrc`)
 - Clear `node_modules` and reinstall: `rm -rf node_modules && npm install`
 - Check the console for error messages
-

@@ -26,6 +26,7 @@ export class ExampleService {
 ### Step 2: Implement the Logic
 
 The `process` method should:
+
 - Accept a string input
 - Transform it (e.g., uppercase)
 - Return the result
@@ -33,6 +34,7 @@ The `process` method should:
 ### Step 3: Add Error Handling
 
 Handle edge cases:
+
 - Empty string input
 - Null/undefined input
 
@@ -49,4 +51,3 @@ console.log(service.process('hello')); // Should output: 'HELLO'
 - [ ] Process method implemented
 - [ ] Error handling added
 - [ ] Basic test passes
-
