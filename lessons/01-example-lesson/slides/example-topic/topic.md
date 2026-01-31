@@ -57,10 +57,6 @@ layout: task
 <tldraw class="inset-0 w-full h-full" doc="01-example-lesson/example-topic/full-screen-drawing-example.json"></tldraw>
 
 ---
-layout: ask-me-anything
----
-
----
 layout: section
 ---
 
@@ -125,20 +121,34 @@ layoutClass: gap-x-2
 ::left::
 
 <WindowMockup codeblock title="template.html">
+
 ```html
 <p>Template</p>
 ```
+
 </WindowMockup>
 
 ::right::
 
 <WindowMockup codeblock title="code.ts">
 
-```ts twoslash
-import { ref } from 'vue';
-
-const count = ref(0);
-//            ^?
+```ts {all} twoslash
+// @log: Custom log message
+const a = 1;
+// @error: Custom error message
+const b = 1;
+// @warn: Custom warning message
+const c = 1;
+// @annotate: Custom annotation message
 ```
 
 </WindowMockup>
+
+::bottom::
+<Callout type="info">
+Shikijs and twoslash rock your code samples
+</Callout>
+
+---
+layout: ask-me-anything
+---
