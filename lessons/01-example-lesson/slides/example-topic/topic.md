@@ -1,10 +1,11 @@
 ---
 layout: cover
+logo: lessons/01-example-lesson/slides/example-topic/Icon.png
 ---
 
 # Your Workshop
 
-## Succeed, whatever you build
+Succeed, whatever you build
 
 ---
 layout: section
@@ -51,8 +52,6 @@ layout: task
 - step by step
 - lists are easy to follow
 
----
-layout: none
 ---
 
 <tldraw class="inset-0 w-full h-full" doc="01-example-lesson/example-topic/full-screen-drawing-example.json"></tldraw>
@@ -114,4 +113,34 @@ console.log(`Step ${3}` as string);
 ```
 ````
 
+</WindowMockup>
+
+---
+layout: two-cols-header
+layoutClass: gap-x-2
+---
+
+# Side-by-side
+
+::left::
+
+<WindowMockup codeblock title="template.html">
+```html
+<p>Template</p>
+```
+</WindowMockup>
+
+::right::
+
+<WindowMockup codeblock title="code.ts">
+```ts twoslash
+// @log: Custom log message
+const a = 1
+//    ^?
+// @error: Custom error message
+const b = 1
+// @warn: Custom warning message
+const c = 1
+// @annotate: Custom annotation message
+```
 </WindowMockup>
