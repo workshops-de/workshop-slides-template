@@ -4,7 +4,6 @@ title: Example Lesson
 info: |
   ## Example Lesson
   This is an example lesson to demonstrate the slide structure.
-class: text-center
 drawings:
   persist: false
 transition: slide-left
@@ -18,9 +17,6 @@ theme: '@workshops.de/slidev-theme'
 addons:
   - window-mockup
   - slidev-addon-tldraw
----
-
----
 src: ./slides/example-topic/topic.md
 ---
 
