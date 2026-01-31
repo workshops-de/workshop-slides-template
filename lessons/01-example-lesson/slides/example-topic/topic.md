@@ -133,14 +133,12 @@ layoutClass: gap-x-2
 ::right::
 
 <WindowMockup codeblock title="code.ts">
+
 ```ts twoslash
-// @log: Custom log message
-const a = 1
-//    ^?
-// @error: Custom error message
-const b = 1
-// @warn: Custom warning message
-const c = 1
-// @annotate: Custom annotation message
+import { ref } from 'vue';
+
+const count = ref(0);
+//            ^?
 ```
+
 </WindowMockup>
