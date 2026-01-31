@@ -1,0 +1,117 @@
+---
+layout: cover
+---
+
+# Your Workshop
+
+## Succeed, whatever you build
+
+---
+layout: section
+---
+
+# First Section
+
+---
+layout: sub-section
+---
+
+# First Sub-Section
+
+---
+layout: why
+---
+
+# Explains, why this topic matters.
+
+---
+layout: little-what
+---
+
+# Explain in one sentence what the following topic is about.
+
+---
+layout: what-if
+---
+
+# What if we want to bring it to the next level?
+
+---
+layout: task
+---
+
+# Create your own solution, now.
+
+---
+
+# Explanation
+
+- Work with lists
+- to explain important things
+- step by step
+- lists are easy to follow
+
+---
+layout: none
+---
+
+<tldraw class="inset-0 w-full h-full" doc="01-example-lesson/example-topic/full-screen-drawing-example.json"></tldraw>
+
+---
+layout: ask-me-anything
+---
+
+---
+layout: section
+---
+
+# Code Examples
+
+---
+
+# Simple Code Example
+
+<WindowMockup codeblock title="my-file.js" padding="2rem">
+```js
+export function do() {
+    return 'Success 🚀';
+}
+```
+</WindowMockup>
+
+### Markup
+
+````html
+<WindowMockup codeblock title="my-file.js" padding="2rem">
+  ```js export function do() { return 'Success 🚀'; } ```
+</WindowMockup>
+````
+
+---
+
+# Magic move
+
+<WindowMockup codeblock>
+
+````md magic-move
+```ts
+console.log('Hello, World!');
+```
+
+```js
+console.log('Hello, World!');
+console.log(`Step ${1}`);
+```
+
+```js
+console.log('Hello, World!');
+console.log(`Step ${1 + 1}`);
+```
+
+```ts
+console.log('Hello, World!');
+console.log(`Step ${3}` as string);
+```
+````
+
+</WindowMockup>
