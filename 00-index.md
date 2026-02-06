@@ -14,6 +14,7 @@ seoMeta:
 # Build configuration
 base: /00-index/
 out: ./dist/00-index
+theme: '@workshops.de/slidev-theme'
 ---
 
 # Workshop Name
