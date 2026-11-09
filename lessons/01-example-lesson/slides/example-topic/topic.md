@@ -60,7 +60,7 @@ layout: task
 
 ---
 
-<tldraw class="inset-0 w-full h-full" doc="01-example-lesson/example-topic/full-screen-drawing-example.json"></tldraw>
+<tldraw class="inset-0 w-full h-full" doc="example-topic/full-screen-drawing-example.json"></tldraw>
 
 ---
 layout: section
