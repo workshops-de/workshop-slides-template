@@ -62,8 +62,8 @@ Open http://localhost:3030 to see your slides.
 
 `.claude/settings.json` enables the [`workshops-slides`](https://github.com/workshops-de/claude-plugins)
 plugin. Start Claude Code in a clone of the repository (terminal, desktop app or IDE) and trust the
-folder: the skills for creating workshops, lessons, tasks and reviews are then available, e.g.
-`/workshops-slides:create-workshop` or `/workshops-slides:lesson-review`. Cloud sessions
+folder: the skills for lessons, tasks, reviews and conventions are then available, e.g.
+`/workshops-slides:lesson-review` or `/workshops-slides:lesson-section-interview`. Cloud sessions
 (claude.ai/code) don't load it.
 
 ## 📝 Creating a New Lesson
