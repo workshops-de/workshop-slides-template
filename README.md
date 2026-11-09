@@ -60,11 +60,12 @@ Open http://localhost:3030 to see your slides.
 
 ### Claude Code
 
-`.claude/settings.json` enables the [`workshops-slides`](https://github.com/workshops-de/claude-plugins)
-plugin. Start Claude Code in a clone of the repository (terminal, desktop app or IDE) and trust the
-folder: the skills for lessons, tasks, reviews and conventions are then available, e.g.
-`/workshops-slides:lesson-review` or `/workshops-slides:lesson-section-interview`. Cloud sessions
-(claude.ai/code) don't load it.
+`.claude/settings.json` enables the [workshops.de plugins](https://github.com/workshops-de/claude-plugins)
+`workshops-courses` (lessons, tasks, German translations, git conventions) and `workshops-slidev`
+(slide conventions, section outlines, migration, reviews). Start Claude Code in a clone of the
+repository (terminal, desktop app or IDE) and trust the folder: the skills are then available, e.g.
+`/workshops-slidev:lesson-review` or `/workshops-courses:translate-task-de`. Cloud sessions
+(claude.ai/code) don't load them.
 
 ## 📝 Creating a New Lesson
 
