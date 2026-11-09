@@ -1,0 +1,217 @@
+---
+description: Rules for creating slidev pages
+globs:
+alwaysApply: true
+---
+
+<!-- Generated from the slidev-authoring skill in https://github.com/workshops-de/claude-plugins. Edit it there and re-export. -->
+
+## Structure
+
+Applies to lessons with `slides_type: slidev`. Each lesson has an entry file named like its folder and
+one folder per topic under `slides/`. A topic follows 4-MAT and consists of these files:
+
+- `why.md`: starts with a cover slide for the topic
+- `what.md`
+- `how.md`
+- `what-if.md`
+- `task.md`: ends the topic with a task slide (a cover with the title of the exercise)
+
+### Example
+
+```
+lessons/
+└── 02-llm-introduction/
+    ├── lesson.yml
+    ├── 02-llm-introduction.md      # Entry file: headmatter + links to the topic files
+    ├── slides/
+    │   └── llm-introduction/       # Topic folder
+    │       ├── why.md
+    │       ├── what.md
+    │       ├── how.md
+    │       ├── what-if.md
+    │       └── task.md
+    └── tasks/
+public/
+└── 02-llm-introduction/            # Images, referenced as /02-llm-introduction/...
+```
+
+### Linking topic files in the entry file
+
+The entry file's headmatter (theme, `base`, `out`, addons) links the first topic file with `src`; every
+further file gets its own `src` slide:
+
+```md
+---
+theme: '@workshops.de/slidev-theme'
+base: /02-llm-introduction/
+out: ../../dist/02-llm-introduction
+src: ./slides/llm-introduction/why.md
+---
+
+---
+src: ./slides/llm-introduction/what.md
+---
+```
+
+### Single-deck repositories
+
+A few repositories hold one single deck instead of lessons (e.g. `ai-software-engineers-slides`):
+`slides.md` in the root links topic files under `pages/<topic>/`, with the same 4-MAT files:
+
+```
+/
+├── slides.md                   # Entry file: headmatter + src links
+├── sources.md
+└── pages/
+    └── services/               # Topic folder
+        ├── why.md
+        ├── what.md
+        ├── how.md
+        ├── what-if.md
+        └── task.md
+```
+
+```md
+---
+src: ./pages/services/why.md
+---
+```
+
+Code highlighting, Mermaid, shortcuts and styles come from the theme; do not add `setup/` or `styles/`
+folders to the repository.
+
+## Slide
+
+### Basics
+
+- The front matter where settings of the slide are defined has 3 `-` above and 3 `-` below
+- The analysed code dictates the content.
+  - ifthe resarch finds more content it is mentioned in the outlook as interesting topic
+- All sources used to generate the slides are collected in its own slide-deck `sources.md`
+  - Each slide in `sources.md` can habe up to 5 sources listed
+- Avoid HTML if possible
+- Only use it for specialities and use https://unocss.dev/, if needed
+- Prefer Markdown over custom HTML for lists
+- Prefer HTML over Markdown when it comes to info boxes highlighting important statements
+
+### Example
+
+```md
+---
+layout: default
+---
+```
+
+### Text
+
+- List text should fit in one line
+- Text should not flow over slide
+- Be clear and concise
+- Avoid content duplications
+
+### Images in Slides
+
+- If the Slide has a list or text, prefer 2-column layout
+  - one column contains the text/list, the other an image
+- Search for images that match the text/list contents online (eg. https://unsplash.com)
+
+### Code Example in slide
+
+- Never use more than 2 Code-Blocks in one Slide
+- Never nest markdown code blocks inside HTML, due to parsing issues
+- Prefer one code example per slide instead of have multiple
+- Prefer simple code examples (a method)
+- Use comment blocks /_ ... _/ to omit unimportant code lines
+- Prefer code examples from 1-10 lines
+- If code examples are longer than 10 lines avoid adding other elements on the slide (put them in the next slide)
+- For comparison 2 code examples next to each other are fine
+- Annotate each codeblock with correct programming language
+- Embrace @Shiki to highlight important parts of the code
+- Code should not fall out of the slide (overflow)
+- Use line numbers if code examples have more than 4 lines
+- If the code doesn't fit into one slide, you use the maxHeight to set a fixed height and enable scrolling:
+
+```ts {2|3|7|12}{maxHeight:'100px'}
+// Example maxHeight
+function add(a: Ref<number> | number, b: Ref<number> | number) {
+  return computed(() => unref(a) + unref(b));
+}
+/// ...as many lines as you want
+const c = add(1, 2);
+```
+
+### Mermaid
+
+- Use mermaid graphs for processes & flows
+
+## Layouts
+
+- **Prefer layouts over custom HTML.** `@workshops.de/slidev-theme` provides:
+  - `cover` - title slide of a deck, `end` - closing slide
+  - `section` / `sub-section` - section dividers
+  - `why`, `little-what`, `what-if`, `task` - the 4-MAT phases (see Didactics)
+  - `default` - regular content
+  - `two-cols`, `two-cols-header` - two columns (text + image, or two code examples)
+  - `image-left` / `image-right` - content next to an image
+  - `ask-me-anything` - Q&A slide
+- Slidev's built-in `center`, `fact`, `quote` and `statement` also work, but without the theme's look;
+  prefer the theme layouts above.
+- Configure a layout with `layoutClass` when needed:
+  ```md
+  ---
+  layout: two-cols
+  layoutClass: gap-16
+  ---
+  ```
+- Use the `::right::` slot for the second column:
+  ```md
+  ---
+  layout: two-cols
+  ---
+
+  # Left column
+
+  ::right::
+
+  # Right column
+  ```
+- If a custom arrangement repeats across slides, turn it into a layout instead of copying HTML.
+- Keep bullet lists short: 5-8 points at most, each fitting on one line.
+
+## Didactics
+
+- Ensure each module follows the 4-MAT learning cycle
+
+### 4-MAT Teaching Structure
+
+For each major concept identified in the commits, structure the learning using the 4-MAT system:
+
+1. **WHY (Connection)** - 25% of content
+   - Begin with why this Angular feature/approach matters
+   - Connect to real-world problems it solves
+   - Use concrete examples from the codebase to demonstrate pain points addressed
+   - Appeal to intuition and personal meaning
+
+2. **WHAT (Conceptual)** - 25% of content
+   - Present the core concepts and facts
+   - Show code from the repository that implements these concepts
+   - Provide clear explanations of how the feature works in Angular
+   - Present the theoretical foundation behind the implementation
+
+3. **HOW (Practice)** - 25% of content
+   - Show step-by-step application in code examples from the repository
+   - Create exercises based on actual commit changes
+   - Demonstrate implementation patterns and best practices as seen in the code
+   - Guide through practical application scenarios
+
+4. **WHAT IF (Creative Application)** - 25% of content
+   - Explore extensions and variations of the concepts
+   - Discuss edge cases and how to handle them
+   - Encourage creative problem-solving using the learned concepts
+   - Show alternative approaches or future possibilities
+
+## Quality
+
+- Double check if all files/slides are reachable (are the paths correct)
+- Check for empty slides and remove them
