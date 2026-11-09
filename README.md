@@ -54,10 +54,17 @@ Open http://localhost:3030 to see your slides.
 │               ├── hint.md
 │               ├── bonus.md         # Bonus challenges (optional)
 │               └── assets/          # Task-specific images
-└── .cursor/
-    └── rules/
-        └── slidev-rules.mdc         # AI rules for slide creation
+└── .claude/
+    └── settings.json                # Enables the workshops.de Claude Code plugin
 ```
+
+### Claude Code
+
+`.claude/settings.json` enables the [`workshops-slides`](https://github.com/workshops-de/claude-plugins)
+plugin. Start Claude Code in a clone of the repository (terminal, desktop app or IDE) and trust the
+folder: the skills for creating workshops, lessons, tasks and reviews are then available, e.g.
+`/workshops-slides:create-workshop` or `/workshops-slides:lesson-review`. Cloud sessions
+(claude.ai/code) don't load it.
 
 ## 📝 Creating a New Lesson
 
